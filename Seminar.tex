@@ -1,0 +1,50 @@
+
+%--------------------------------------------------------------------------
+%
+%  Seminar Template
+%  [Put Your Seminar Title Here]
+%  By: [Put Your Name Here]
+%
+%--------------------------------------------------------------------------
+
+
+
+\documentclass[oneside,a4paper,12pt]{article}
+
+\input{styles/common.tex}
+\input{styles/custom.tex}
+
+\begin{document}
+
+
+% -------------------- Front Pages --------------------
+
+\include{front/info}
+\pagestyle{empty}
+
+\include{front/template/title}
+%\input{front/template/besmellah.tex}‌  % بسم‌الله
+
+
+\pagestyle{plain}
+\pagenumbering{arabic}
+%\pagenumbering{tartibi}
+
+% -------------------- Chapters -------------------
+\include{chapters/context}
+% -------------------- Bibliography & Dictionary --------------------
+
+\include{bibs/bibs}
+%\include{front/dictionary}
+
+% -------------------- Appendices --------------------
+
+\begin{appendix}
+\include{chapters/appendix}
+\end{appendix}
+
+
+
+% -------------------- The End! --------------------
+
+\end{document}
